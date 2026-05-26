@@ -21,9 +21,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#0A0A0F] text-white overflow-x-hidden">
       {/* ─── NAVBAR ─── */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-4 bg-[#0A0A0F]/80 backdrop-blur-md border-b border-white/5">
-        <span className="font-bebas text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#A855F7] to-[#06B6D4]">
-          ANZOL COMPANY
-        </span>
+        <img src="/anzol-logo.png" alt="Anzol Company" className="h-10 w-auto" />
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
           <a href="#servicos" className="hover:text-white transition-colors">Serviços</a>
           <a href="#portfolio" className="hover:text-white transition-colors">Portfólio</a>
@@ -58,7 +56,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-[#A855F7] text-sm font-mono tracking-[0.3em] uppercase mb-4"
           >
-            Produção Musical Premium
+            Produção Musical
           </motion.p>
 
           <motion.h1
@@ -352,7 +350,7 @@ export default function Home() {
             </div>
             <div className="flex gap-6 md:justify-end">
               {[
-                { icon: Instagram, label: "Instagram", href: "#" },
+                { icon: Instagram, label: "Instagram", href: "https://instagram.com/anzolcompany" },
                 { icon: Youtube, label: "YouTube", href: "#" },
               ].map((social, i) => (
                 <a
@@ -374,9 +372,7 @@ export default function Home() {
       {/* ─── FOOTER ─── */}
       <footer className="py-8 px-6 md:px-12 border-t border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-bebas text-xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#A855F7] to-[#06B6D4]">
-            ANZOL COMPANY
-          </span>
+          <img src="/anzol-logo.png" alt="Anzol Company" className="h-8 w-auto" />
           <p className="text-white/30 text-xs">
             © {new Date().getFullYear()} Anzol Company. Todos os direitos reservados.
           </p>
