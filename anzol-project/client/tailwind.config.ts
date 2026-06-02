@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        cormorant: ["Cormorant Garamond", "Georgia", "serif"],
+        inter: ["Inter", "system-ui", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        mono: ["Space Mono", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
